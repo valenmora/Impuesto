@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Impuesto</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   </head>
+
+   <body>
+      <h2>Login</h2>
+		<form th:action="@{/calcular}" method="post"> 
+			<p><label for="iva"> IVA </label> </p>
+			<p><input type="number" name="datoUno_IVA" id="datoUno_IVA" th:value=${datoUno_IVA}> + <input type="number" name="datoDos_IVA" id="datoDos_IVA" th:value=${datoDos_IVA}> <input type="number" name="resultadoIVA" id="resultadoIVA" th:value=${resultadoIVA}></p>
+			
+			<p><label for="iva"> Ingresos Brutos </label></p>
+			<p><input type="number" name="datoUno_Bruto" id="datoUno_Bruto" th:value=${datoUno_Bruto}> + <input type="number" name="datoDos_Bruto" id="datoDos_Bruto" th:value=${datoDos_Bruto}> <input type="number" name="resultadoBruto" id="resultadoBruto" th:value=${resultadoBruto}></p>
+			
+			<p> <input type="reset" value="Volver a Calcular" a href="/login"> </p>
+
+		</form:form> 
+   </body>
+</html>
